@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form test</title>
+</head>
+<body>
+
+<form method="post" action="Form">
+<div>  <!-- div테그를 사용하면 br테그 없이 줄 바꿈이 된다. -->
+<label>ID: </label><input name="id" type="text">
+</div>
+
+<div>
+<label>PASSWORD: </label><input name="password" type="password">
+</div>
+
+<div>
+<input type=checkbox name=save><label>아이디저장여부</label>
+</div>
+
+<div>
+<input type=checkbox name=inotice value="전화"><label>전화 수신동의여부</label>
+</div>
+
+<div>
+<label>직업선택:</label>
+<select name=job>
+<option>회사원</option>
+<option>학생</option>
+<option>기타</option> 
+</select>
+</div>
+
+<div>
+<label>성별:</label>
+<select name=s>
+<option value=1>남</option>
+<option value=2>여</option>
+</select>
+</div>
+
+<div>
+<label>좋아하는 음식:</label>
+<select name=food multiple size=5> <!-- multiple은 이름은 하나인데,여러개를 받음.  -->
+<option>치킨</option>
+<option>피자</option>
+<option>탕수육</option> 
+<option>순두부</option> 
+<option>짜장면</option> 
+</select>
+</div>
+
+<div>
+<label>생년월일:</label>
+<input type="date" name="date">
+</div>
+
+
+<div>
+<input type="submit" value="전송">
+</div>
+
+</form>
+
+</body>
+</html>
